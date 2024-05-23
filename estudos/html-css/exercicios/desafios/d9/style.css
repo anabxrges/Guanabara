@@ -1,0 +1,71 @@
+* {
+  /* Seleciona todos os elementos */
+  margin: 0; /* Remove a margem padrão de todos os elementos */
+  padding: 0; /* Remove o preenchimento do padding padrão de todos os elementos */
+  box-sizing: border-box; /* Inclui a borda e o preenchimento no cálculo do tamanho total dos elementos */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif; /* Define a família de fontes do body do documento */
+  background-color: #222; /* Define a cor de fundo do body como cinza escuro */
+  color: white; /* Define a cor do texto do body (ou seja, geral, de tudo, do conteudo inteiro, de tudo que estiver dentro do site) como branco */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.container {
+  display: flex; /* Define um contêiner flexível */
+  justify-content: center; /* Centraliza os itens filhos horizontalmente */
+  align-items: center; /* Centraliza os itens filhos verticalmente */
+  max-width: 1200px; /* Define a largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente na página */
+}
+
+.content {
+  position: relative; /* Define o posicionamento relativo para o contêiner */
+  display: flex; /* Define um contêiner flexível */
+  flex-direction: column; /* Organiza os itens filhos em uma coluna (ou seja, um em baixo do outro) */
+  align-items: center; /* Centraliza os itens filhos horizontalmente */
+  justify-content: center; /* Centraliza os itens filhos verticalmente */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.thumb {
+  display: grid; /* Define um contêiner de grade */
+  grid-template-columns: repeat(
+    2,
+    400px
+  ); /* Define duas colunas de 400px cada */
+  gap: 20px; /* Define um espaço de 20px entre os itens da grade */
+  justify-content: center; /* Centraliza o grid dentro do contêiner pai */
+  align-content: center; /* Centraliza o conteúdo do grid verticalmente */
+  padding: 20px; /* Adiciona um preenchimento de 20px ao redor do contêiner */
+
+  @media (max-width: 860px) {
+     /* Aplica estilos quando a largura da tela é de 860px ou menor */
+     grid-template-columns: 1fr; /* Define uma coluna de 350px */
+  }
+}
+
+.thumb a:hover {
+  transition: all 0.5s; /* Define uma transição de 0.5s para todas as propriedades */
+  transform: scale(1.1); /* Aumenta o tamanho do elemento em 10% */
+  box-shadow: 0 0 10px black; /* Adiciona uma sombra ao redor do elemento */
+}
+
+h1 {
+  font-size: 32px; /* */
+  padding: 10px; /* Adiciona um preenchimento de 10px ao redor do título */
+}
+
+img {
+  width: 100%; /* Define a largura da imagem como 100% do contêiner pai */
+  height: 100%; /* Define a altura da imagem como 100% do contêiner pai */
+  object-fit: cover; /* Garante que a imagem cubra completamente o contêiner pai */
+  object-position: center; /* Centraliza a imagem dentro do contêiner */
+  border-radius: 20px; /* Adiciona bordas arredondadas com raio de 20px */
+}
+
+#img-cagada {
+  outline: 2px solid #750317; /* Define a cor e a espessura da borda */
+  outline-offset: -2px; /* Move a borda para dentro do elemento */
+}
