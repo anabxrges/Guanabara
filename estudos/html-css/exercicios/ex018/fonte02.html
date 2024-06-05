@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontes externas</title>
+    <style>
+      @font-face {
+        font-family: 'techno';
+        src: url('fontes/PERFORMANCE.ttf') format('truetype'),
+          url('fontes/PERFORMANCE.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+
+        /* Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+      */
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1 {
+        align-items: center;
+        font-family: techno, 'Times New Roman', Times, serif;
+        font-size: 3em;
+        font-weight: normal;
+        justify-content: center;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        text-align: center;
+      }
+
+      p {
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Starman</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime voluptatem
+      necessitatibus architecto vel nihil iusto eius nulla, quasi corporis
+      aperiam laboriosam eos neque esse eaque? Eos dignissimos voluptatem
+      eveniet impedit.
+    </p>
+  </body>
+</html>
