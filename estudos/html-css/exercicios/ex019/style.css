@@ -7,14 +7,22 @@ body {
 
 h1#principal {
   text-align: center;
-  color: rgb(175, 80, 6);
-  background-color: rgba(43, 27, 27, 0.867);
+  color: #b8684d;
+  background-color: #d99059;
 }
 
 h1 {
-  color: rgb(90, 129, 33);
+  color: #b88c4b;
 }
 
-h2 {
-  color: rgb(129, 91, 33);
+.basico {
+  color: #81b177;
+}
+
+.intermediario {
+  color: #afad61;
+}
+
+.avancado {
+  color: #b17777;
 }
