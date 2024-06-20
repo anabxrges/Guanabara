@@ -10,31 +10,89 @@
       body {
         font-family: 'Urbanist', sans-serif;
         font-optical-sizing: auto;
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
       }
 
-      .titulo {
+      #assuntos {
+        height: 10px;
+        margin-top: 10px;
+      }
+
+      .container {
+        margin: 0 auto;
+      }
+
+      h1 {
+        background-color: black;
+        color: rgb(141, 130, 82);
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 0;
+        padding-left: 10px;
+        padding-top: 5px;
+      }
+
+      h2 {
         font-family: 'Bebas Neue', sans-serif;
         font-weight: 400;
         font-style: normal;
         color: rgb(141, 130, 82);
         background-color: black;
+        padding-left: 10px;
+        padding-top: 5px;
       }
 
       header {
         background-color: black;
+        display: flex;
+        height: 50px;
+        padding-top: 0;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 0;
       }
-      
+
+      a:hover {
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      nav > ul {
+        color: blue;
+        display: flex;
+        gap: 50px;
+        justify-content: right;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        list-style: none;
+      }
+
+      nav > li {
+        font-size: 18px;
+      }
     </style>
   </head>
   <body>
     <header>
-      <h1 class="titulo">Meu site</h1>
+      <h1>Meu Site</h1>
       <nav>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
-        <a href="#">Link</a>
+        <ul>
+          <a href="#">
+            <li>Home</li>
+          </a>
+          <a href="#">
+            <li>Sobre</li>
+          </a>
+          <a href="#">
+            <li>Contato</li>
+          </a>
+        </ul>
       </nav>
     </header>
     <main>
@@ -42,7 +100,7 @@
         <p>Esportes Política Tecnologia</p>
       </section>
       <article>
-        <h2 class="titulo">Notícia sobre o Brasil</h2>
+        <h2>Notícia sobre o Brasil</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
           perferendis dignissimos maxime, dolorem corrupti sed reiciendis illo
