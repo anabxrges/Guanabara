@@ -17,13 +17,12 @@ body {
 }
 
 h1 {
-  align-items: center;
   color: rgba(251, 246, 246, 0.851);
   display: flex;
-  justify-content: center;
   font-family: 'BebasNeue';
   margin: 0;
   padding-top: 10px;
+  justify-content: center;
 }
 
 header {
@@ -36,14 +35,21 @@ header {
   display: flex;
   justify-content: center;
 }
- main {
+main {
+  
+  display: flex;
   background-color: white;
- }
+  flex-direction: column;
+  
+  margin: 0 380px 0 380px;
+  padding: 0 20px;
+  width: 700px;
+}
 
 nav > ul {
   display: flex;
   list-style: none;
-  margin: 20px;
+  margin: 0;
   padding: 0;
 }
 
@@ -54,7 +60,7 @@ ul > a {
   padding-top: 10px;
 }
 
-.titulo {
+#titulo {
   color: #417046;
   font-family: 'Droid';
 }
