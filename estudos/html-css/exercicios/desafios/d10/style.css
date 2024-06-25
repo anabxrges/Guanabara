@@ -16,7 +16,6 @@ body {
   height: 100vh;
   margin: 0;
   place-items: center;
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -35,7 +34,7 @@ header {
 }
 
 iframe {
-  padding: 20px 40px 20px 40px;
+  padding: 20px 35px 20px 35px;
   margin: 0;
 }
 
