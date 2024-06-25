@@ -19,6 +19,11 @@ body {
   box-sizing: border-box;
 }
 
+.artigo {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 h1 {
   color: rgba(251, 246, 246, 0.851);
   display: flex;
@@ -34,7 +39,7 @@ header {
 }
 
 iframe {
-  padding: 20px 35px 20px 35px;
+  padding: 20px 40px 20px 40px;
   margin: 0;
 }
 
@@ -56,7 +61,7 @@ main {
   width: 100%;
   max-width: 800px;
   background-color: white;
-  padding: 20px;
+  
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
@@ -102,11 +107,28 @@ p > a {
   text-decoration: none;
 }
 
+.container {
+  background-color: #d0e8d0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+
 ul > a {
   color: rgba(251, 246, 246, 0.851);
   text-decoration: none;
   padding-right: 30px;
   padding-top: 10px;
+}
+
+ol > li {
+  list-style: none;
+}
+
+.lista {
+  columns: 2;
 }
 
 #titulo {
