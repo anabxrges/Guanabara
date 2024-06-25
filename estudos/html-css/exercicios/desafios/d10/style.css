@@ -125,10 +125,13 @@ ul > a {
 
 ol > li {
   list-style: none;
+  
 }
+
 
 .lista {
   columns: 2;
+  column-gap: 20px;
 }
 
 #titulo {
