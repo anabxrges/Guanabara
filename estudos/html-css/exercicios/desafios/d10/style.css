@@ -60,6 +60,7 @@ img {
   color: rgba(251, 246, 246, 0.851);
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 main {
   width: 100%;
@@ -118,7 +119,6 @@ p > a {
   margin: 20px;
 }
 
-
 ul > a {
   color: rgba(251, 246, 246, 0.851);
   text-decoration: none;
@@ -128,11 +128,9 @@ ul > a {
 
 ol > li {
   list-style: none;
-  
 }
 
-
-.lista {
+ol {
   columns: 2;
   column-gap: 20px;
 }
@@ -141,3 +139,19 @@ ol > li {
   color: #417046;
   font-family: 'Droid';
 }
+
+footer {
+  color: #d0e8d0;
+  background-color: #155c1c;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+}
+
+footer > a {
+  color: white;
+  text-decoration: none;
+}
+ .extra {
+  border-radius: 0 0 10px 10px 0;
+ }
