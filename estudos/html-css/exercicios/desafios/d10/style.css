@@ -10,6 +10,22 @@
   src: url(fontes/idroid.otf) format('opentype');
 }
 
+:root {
+  --cor0: var(--cor0) #84e1ad;
+  --cor1: var(--cor1) #fbf6f6d9;
+  --cor2: var(--cor2) #417046;
+  --cor3: var(--cor3) #30c43f;
+  --cor4: var(--cor4) #99eca1e7;
+  --cor5: var(--cor5) #bbf9c1;
+  --cor6: var(--cor6) #99eca143;
+  --cor7: var(--cor7) #a3e9aab0;
+  --cor8: var(--cor8) #e4fae6b0;
+  --cor9: var(--cor9) #f2f8f3b0;
+  --cor10: var(--cor10) #f2f8f36d;
+  --cor11: var(--cor11) #00970f;
+  --cor12: var(--cor12) #d0e8d0; 
+}
+
 body {
   background-color: #84e1ad;
   display: grid;
@@ -25,7 +41,7 @@ body {
 }
 
 h1 {
-  color: rgba(251, 246, 246, 0.851);
+  color: #fbf6f6d9;
   display: flex;
   font-family: 'BebasNeue';
   margin: 0;
@@ -57,7 +73,7 @@ img {
 
 .descricao {
   align-items: center;
-  color: rgba(251, 246, 246, 0.851);
+  color: #fbf6f6d9;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -120,7 +136,7 @@ p > a {
 }
 
 ul > a {
-  color: rgba(251, 246, 246, 0.851);
+  color: #fbf6f6d9;
   text-decoration: none;
   padding-right: 30px;
   padding-top: 10px;
