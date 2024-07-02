@@ -30,10 +30,7 @@
 
 body {
   background-color: var(--cor0);
-  display: grid;
-  height: 100vh;
   margin: 0;
-  place-items: center;
   box-sizing: border-box;
   font-family: var(--fonte-padrao);
 }
@@ -84,6 +81,8 @@ img {
 main {
   width: 100%;
   max-width: 800px;
+  min-width: 200px;
+  margin: auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -132,7 +131,7 @@ p > a {
   margin: 20px;
 }
 
-ul > a {
+li > a {
   color: var(--cor1);
   text-decoration: none;
   padding-right: 30px;
