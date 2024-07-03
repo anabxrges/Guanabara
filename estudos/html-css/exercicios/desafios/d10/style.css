@@ -56,7 +56,7 @@ header {
   justify-items: center;
   background: var(--degrade-header);
   width: 100%;
-  padding-top: 20px;
+  padding-top: ;
 }
 
 iframe {
@@ -136,8 +136,14 @@ p > a {
 li > a {
   color: var(--cor1);
   text-decoration: none;
-  padding-right: 30px;
-  padding-top: 10px;
+  padding: 5px 10px;
+}
+
+li > a:hover {
+  background: var(--cor2);
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.693);
+  transition-duration: 0.5s;
 }
 
 ol > li {
