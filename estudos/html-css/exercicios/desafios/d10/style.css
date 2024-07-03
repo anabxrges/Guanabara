@@ -56,6 +56,7 @@ header {
   justify-items: center;
   background: var(--degrade-header);
   width: 100%;
+  padding-top: 20px;
 }
 
 iframe {
@@ -86,6 +87,8 @@ main {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 mark {
@@ -101,8 +104,7 @@ nav > ul {
 }
 
 .subtitulo {
-  background: var(--degrade-subtitulo)
-  ;
+  background: var(--degrade-subtitulo);
   display: flex;
   font-family: var(--fonte-android);
 }
