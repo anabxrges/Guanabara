@@ -56,7 +56,7 @@ header {
   justify-items: center;
   background: var(--degrade-header);
   width: 100%;
-  padding-top: ;
+  padding-top: 10px;
 }
 
 iframe {
@@ -83,12 +83,30 @@ main {
   width: 100%;
   max-width: 800px;
   min-width: 200px;
-  margin: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+main p {
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 2em;
+}
+
+main strong {
+  color: var(--cor2);
+  font-weight: bold;
+}
+
+main a:hover{
+  text-decoration: underline;
+  
 }
 
 mark {
@@ -115,10 +133,6 @@ nav > ul {
   margin: 0;
 }
 
-p {
-  text-indent: 20px;
-  text-align: justify;
-}
 
 p > a {
   color: var(--cor6);
@@ -130,7 +144,7 @@ p > a {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
+ 
 }
 
 li > a {
@@ -171,4 +185,10 @@ footer {
 footer > a {
   color: white;
   text-decoration: none;
+}
+
+.img-pequena {
+  display: block;
+  max-width: 350px;
+  margin: auto;
 }
