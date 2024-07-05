@@ -41,7 +41,6 @@
   box-sizing: border-box;
 }
 
-
 body {
   background-color: var(--cor0);
   margin: 0;
@@ -66,7 +65,7 @@ h1 {
 #titulo {
   color: var(--cor2);
   font-family: var(--fonte-android);
-  padding: 10px;
+  padding: 15px 0 0 0;
 }
 
 header {
@@ -90,7 +89,6 @@ header > p {
   font-size: 17px;
 }
 
-
 nav > ul {
   display: flex;
   list-style: none;
@@ -98,6 +96,58 @@ nav > ul {
   padding: 5px;
 }
 
+main {
+  width: 100%;
+  max-width: 800px;
+  min-width: 200px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+main p {
+  text-indent: 20px;
+  text-align: justify;
+  line-height: 2em;
+  padding: 10px;
+}
+
+main h1 {
+  font-weight: normal;
+}
+
+main h2 {
+  background: var(--degrade-subtitulo), var(--degrade-mark);
+  display: flex;
+  font-family: var(--fonte-android);
+  font-size: 20px;
+  font-weight: normal;
+  text-indent: 10px;
+  padding: 3px 0 3px 0;
+  
+}
+
+main strong {
+  color: var(--cor2);
+  font-weight: bold;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+mark {
+  color: var(--cor2);
+  background: var(--degrade-mark);
+}
+
+p > a {
+  color: var(--cor6);
+  text-decoration: none;
+}
 
 .video > iframe {
   position: absolute;
@@ -131,57 +181,6 @@ img {
   height: auto;
 }
 
-main {
-  width: 100%;
-  max-width: 800px;
-  min-width: 200px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-}
-
-main p {
-  text-indent: 20px;
-  text-align: justify;
-  line-height: 2em;
-}
-
-main h1 {
-  font-weight: normal;
-}
-
-main h2 {
-  background: var(--degrade-subtitulo), var(--degrade-mark);
-  display: flex;
-  font-family: var(--fonte-android);
-  font-size: 20px;
-  font-weight: normal;
-  text-indent: 10px;
-  padding: 3px 0 3px 0;
-}
-
-main strong {
-  color: var(--cor2);
-  font-weight: bold;
-}
-
-main a:hover {
-  text-decoration: underline;
-}
-
-mark {
-  color: var(--cor2);
-  background: var(--degrade-mark);
-}
-
-p > a {
-  color: var(--cor6);
-  text-decoration: none;
-}
-
 li > a {
   color: var(--cor1);
   text-decoration: none;
@@ -210,7 +209,6 @@ a.externo::after {
 aside {
   padding-top: 10px;
   padding-bottom: 10px;
-  
 }
 
 footer {
