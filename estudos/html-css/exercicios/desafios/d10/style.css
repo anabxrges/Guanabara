@@ -35,9 +35,17 @@
   --fonte-android: 'Droid', cursive;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 body {
   background-color: var(--cor0);
   margin: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: var(--fonte-padrao);
 }
@@ -51,9 +59,14 @@ h1 {
   color: var(--cor1);
   display: flex;
   font-family: var(--fonte-destaque);
-  margin: 0;
-  padding-top: 10px;
+  padding-top: 10px 0 10px 0;
   justify-content: center;
+}
+
+#titulo {
+  color: var(--cor2);
+  font-family: var(--fonte-android);
+  padding: 10px;
 }
 
 header {
@@ -65,6 +78,26 @@ header {
   width: 100%;
   padding-top: 10px;
 }
+
+header > p {
+  align-items: center;
+  color: var(--cor1);
+  display: flex;
+  padding: 10px 0 0 0;
+  justify-content: center;
+  text-align: center;
+  line-height: 30px;
+  font-size: 17px;
+}
+
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  margin: 10px;
+  padding: 5px;
+}
+
 
 .video > iframe {
   position: absolute;
@@ -98,13 +131,6 @@ img {
   height: auto;
 }
 
-.descricao {
-  align-items: center;
-  color: var(--cor1);
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
 main {
   width: 100%;
   max-width: 800px;
@@ -150,19 +176,6 @@ mark {
   color: var(--cor2);
   background: var(--degrade-mark);
 }
-
-nav > ul {
-  display: flex;
-  list-style: none;
-  margin: 10px;
-  padding: 0;
-}
-
-#titulo {
-  color: var(--cor2);
-  font-family: var(--fonte-android);
-}
-
 
 p > a {
   color: var(--cor6);
