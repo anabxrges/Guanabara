@@ -66,9 +66,28 @@ header {
   padding-top: 10px;
 }
 
-iframe {
-  padding: 20px 40px 20px 40px;
-  margin: 0;
+.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+.video {
+  background-color: var(--cor2);
+  margin: 0px 0px 30px 0px;
+  padding: 20px;
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.container {
+  background-color: var(--cor7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
 
 img {
@@ -144,23 +163,10 @@ nav > ul {
   font-family: var(--fonte-android);
 }
 
-.video {
-  background-color: var(--cor2);
-  padding: 0;
-  margin: 0;
-}
 
 p > a {
   color: var(--cor6);
   text-decoration: none;
-}
-
-.container {
-  background-color: var(--cor7);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px;
 }
 
 li > a {
@@ -182,7 +188,6 @@ ol > li {
 
 ol {
   columns: 2;
-  column-gap: 20px;
 }
 
 a.externo::after {
@@ -192,6 +197,7 @@ a.externo::after {
 aside {
   padding-top: 10px;
   padding-bottom: 10px;
+  
 }
 
 footer {
