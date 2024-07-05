@@ -180,6 +180,10 @@ ol {
   column-gap: 20px;
 }
 
+a.externo::after {
+  content: '\00A0\1F517';
+}
+
 aside {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -196,6 +200,11 @@ footer {
 footer > a {
   color: white;
   text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--cor3);
+  transition: 1s;
 }
 
 .img-pequena {
