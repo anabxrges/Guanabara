@@ -10,6 +10,19 @@
   src: url(fontes/idroid.otf) format('opentype');
 }
 
+@media screen and (max-width: 600px) {
+  .nav-celular {
+    display: grid;
+    margin: 10px;
+    padding: 5px;
+    grid-template-columns: 2fr 2fr;
+    list-style: none;
+    gap: 8px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
 :root {
   --cor0: #84e1ad;
   --cor1: #fbf6f6d9;
@@ -85,7 +98,6 @@ header > p {
   padding: 10px 10px 0 10px;
   justify-content: center;
   text-align: center;
-  line-height: 30px;
   font-size: 17px;
 }
 
@@ -127,7 +139,6 @@ main h2 {
   font-weight: normal;
   text-indent: 10px;
   padding: 3px 0 3px 0;
-  
 }
 
 main strong {
