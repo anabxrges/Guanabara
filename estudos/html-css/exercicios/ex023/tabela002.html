@@ -25,15 +25,21 @@
         font-size: 1.5em;
         font-weight: bold;
         padding: 10px;
-        background-color: rgba(15, 49, 60, 0.258);
+        background-color: #0f313c42;
       }
 
-      thead, tfoot {
+      thead,
+      tfoot {
         background-color: #eaecf0;
       }
 
       tbody {
         background-color: #f8f9fa;
+      }
+
+      tbody > tr:nth-child(odd) {
+        /* 2n */
+        background-color: #0f313c42;
       }
 
       .num {
@@ -55,11 +61,13 @@
               TR, TD, TH
   -->
     <table>
-      <caption>População das Unidades Federativas</caption>
+      <caption>
+        População das Unidades Federativas
+      </caption>
       <thead>
         <tr>
           <th scope="col">Estado</th>
-          <th scope="col" style="width: 100px;">População</th>
+          <th scope="col" style="width: 100px">População</th>
         </tr>
       </thead>
       <tbody>
@@ -78,7 +86,7 @@
         <tr>
           <td>Bahia</td>
           <td class="num">14 141 626</td>
-      </tr>
+        </tr>
         <tr>
           <td>Paraná</td>
           <td class="num">11 444 380</td>
