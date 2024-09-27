@@ -34,7 +34,7 @@ menu > ul {
 
 menu a {
   border-top: 2px solid grey;
-  background-color: rgb(67, 66, 66);
+  background-color: rgba(67, 66, 66, 0.819);
   color: rgb(255, 255, 255);
   display: block;
   padding: 10px;
@@ -43,7 +43,7 @@ menu a {
 }
 
 menu a:hover {
-  background-color: gray;
+  background-color: rgba(87, 86, 86, 0.895);
 }
 
 main {
