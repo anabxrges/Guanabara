@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/style.css" />
   </head>
   <body>
     <header>
       <h1>Meu Site</h1>
-      <menu>
+      <i class="material-icons" id="burguer" onclick="clickMenu()">menu</i>
+      <menu id="itens">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Notícias</a></li>
@@ -21,14 +25,62 @@
     </header>
     <main>
       <article>
-        <h2>Estudantes de Três Lagoas desenvolvem sistema para monitorar enchentes</h2>
-        <p>Um grupo de alunos do ensino médio em Três Lagoas (MS) está desenvolvendo um sistema para monitorar enchentes utilizando placas eletrônicas e sensores. A iniciativa já rendeu aos estudantes uma vaga entre os 20 melhores projetos em uma competição internacional.</p>
-        <p>O cenário atual na cidade, contornada pelos rios Sucuriú e Paraná é de estiagem, mas os estudantes pensam a longo prazo. Eles querem monitorar a subida das águas no leste do estado.</p>
-        <p><q>A gente queria fazer esse aviso porque aqui a gente ia ajudar a sociedade, como aconteceu no Rio Grande do Sul, que provavelmente não tinha nada para avisá-los, que dá para ver que lá nas notícias mostraram isso. Então eu e o pessoal aqui, principalmente o Ítalo, nós pensamos em fazer um projeto dessa forma, para fazer um sinal de aviso", diz Augusto Lopes, de 16 anos.</q></p>
-        <p>E o aviso vem do sistema que está montado em uma caixa de isopor. A ideia é usar placas eletrônicas para coletar informações e enviar mensagens à população. Para funcionar, a caixa tem que estar perto do local a ser feita a medição. O sensor monitora o nível da água; quando sobe, por exemplo, emite um aviso. Aí entra a função de outra placa, com um chip de celular que envia mensagens, que podem ser direcionadas para a população ou para um órgão responsável, como a Defesa Civil. E uma bateria faz tudo funcionar por meio da luz solar.</p>
-        <p>A ideia levou o grupo para uma competição internacional de uma multinacional sul-coreana. Estudantes do ensino médio de escolas públicas identificam problemas reais e precisam usar ciência e tecnologia para a solução.</p>
-        <p>Foram 1.800 projetos inscritos em todo o país e os estudantes de Três Lagoas conseguiram ficar entre os 20 melhores do Brasil. No estado de Mato Grosso do Sul, eles são os únicos e na região Centro-Oeste só um outro projeto de Mato Grosso conseguiu se classificar.</p>
+        <h2>
+          Estudantes de Três Lagoas desenvolvem sistema para monitorar enchentes
+        </h2>
+        <p>
+          Um grupo de alunos do ensino médio em Três Lagoas (MS) está
+          desenvolvendo um sistema para monitorar enchentes utilizando placas
+          eletrônicas e sensores. A iniciativa já rendeu aos estudantes uma vaga
+          entre os 20 melhores projetos em uma competição internacional.
+        </p>
+        <p>
+          O cenário atual na cidade, contornada pelos rios Sucuriú e Paraná é de
+          estiagem, mas os estudantes pensam a longo prazo. Eles querem
+          monitorar a subida das águas no leste do estado.
+        </p>
+        <p>
+          <q
+            >A gente queria fazer esse aviso porque aqui a gente ia ajudar a
+            sociedade, como aconteceu no Rio Grande do Sul, que provavelmente
+            não tinha nada para avisá-los, que dá para ver que lá nas notícias
+            mostraram isso. Então eu e o pessoal aqui, principalmente o Ítalo,
+            nós pensamos em fazer um projeto dessa forma, para fazer um sinal de
+            aviso", diz Augusto Lopes, de 16 anos.</q
+          >
+        </p>
+        <p>
+          E o aviso vem do sistema que está montado em uma caixa de isopor. A
+          ideia é usar placas eletrônicas para coletar informações e enviar
+          mensagens à população. Para funcionar, a caixa tem que estar perto do
+          local a ser feita a medição. O sensor monitora o nível da água; quando
+          sobe, por exemplo, emite um aviso. Aí entra a função de outra placa,
+          com um chip de celular que envia mensagens, que podem ser direcionadas
+          para a população ou para um órgão responsável, como a Defesa Civil. E
+          uma bateria faz tudo funcionar por meio da luz solar.
+        </p>
+        <p>
+          A ideia levou o grupo para uma competição internacional de uma
+          multinacional sul-coreana. Estudantes do ensino médio de escolas
+          públicas identificam problemas reais e precisam usar ciência e
+          tecnologia para a solução.
+        </p>
+        <p>
+          Foram 1.800 projetos inscritos em todo o país e os estudantes de Três
+          Lagoas conseguiram ficar entre os 20 melhores do Brasil. No estado de
+          Mato Grosso do Sul, eles são os únicos e na região Centro-Oeste só um
+          outro projeto de Mato Grosso conseguiu se classificar.
+        </p>
       </article>
     </main>
+    <script>
+      function clickMenu() {
+        if (itens.style.display == 'block') {
+          itens.style.display = 'none';
+        } else {
+          itens.style.display = 'block'
+        }
+      }
+    </script>
   </body>
 </html>
