@@ -16,14 +16,40 @@ header {
   background-color: gray;
   color: white;
   padding: 10px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header > h1 {
   border: 1px dotted black;
+  margin-bottom: 10px;
+  flex: 0 0 200px;
 }
 
 header > nav {
-  border: 1px dotted black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+nav > a {
+  border-radius: 5px;
+  border: 1px dotted rgb(255, 0, 0);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+}
+
+nav > a:hover {
+  background-color: white;
+  color: black;
+  transition: background-color .7s;
 }
 
 main {
